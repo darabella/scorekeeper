@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- # Score Keeper
+- We will be creating a simple score keeper application using JavaScript.
+- The HTML and CSS has already been done for you.
+- Here are the steps you should take:
+	- Step 1: Add a link to your own custom JS file.
+	- Step 2: Bind click events to the +5 and -5 point buttons and change the innerHTML of the score display appropriately.
+	- Step 3: Bind a click event to the set score button and set the innerHTML of the score display to the score entered in the text box.
+	- **Bonus:** Create a check in your code to make sure the score will not go negative.
+	- **Super Bonus:** Create a function to make the changes to the score display rather than having to write your logic over and over. -->
+<html>
+<head>
+	<title>Score Keeper</title>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- jQuery CDN start -->
+<script
+src="http://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<!-- jQuery CDN end
+Custom Javascript start -->
+<script src="app.js"></script>
+<!-- Custom javascript end -->
+</head>
+<body>
+
+<div class="container">
+	<div id="score">0 Points</div>
+	<div class="margin-top-20">
+		<button class="button-1" id="increase-5">+5 Points</button>
+	</div>
+	<div class="margin-top-20">
+		<button class="button-1" id="decrease-5">-5 Points</button>
+	</div>
+	<div class="margin-top-20">
+		<input id="custom-score" type="text" placeholder="Set a custom score" />
+	</div>
+	<div class="margin-top-20">
+		<button id="submit-custom-score" class="button-2">Set Score</button>
+	</div>
+</div>
+
+</body>
+</html>
